@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index,follow">
+<title>Pomoc i kontakt - Łapa</title>
+<meta name="description" content="Pomoc i kontakt dla aplikacji Łapa: najczęstsze pytania (offline, Premium, powiadomienia, skaner) oraz adres wsparcia.">
+<style>
+  :root{
+    --bg:#FBF8F2; --card:#FFFFFF; --ink:#2A241C; --muted:#7A7266;
+    --green:#2C5A40; --green2:#3E7C59; --line:#ECE5D8; --honeyBg:#FBEBD2; --honeyText:#96690F;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"Nunito Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.65; font-size:17px;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:32px 20px 80px}
+  header{display:flex; align-items:center; gap:12px; margin-bottom:8px}
+  .logo{width:44px;height:44px;border-radius:12px;flex:0 0 auto;
+    background:linear-gradient(135deg,#6CBE8C,#1E4631);
+    display:flex;align-items:center;justify-content:center;font-size:22px}
+  h1{font-size:1.9rem; line-height:1.2; letter-spacing:-.02em; margin:18px 0 4px}
+  .sub{color:var(--muted); margin:0 0 4px}
+  .updated{color:var(--muted); font-size:.9rem; margin:0 0 24px}
+  h2{font-size:1.25rem; color:var(--green); margin:34px 0 10px; letter-spacing:-.01em}
+  h3{font-size:1.05rem; margin:20px 0 4px}
+  p,li{margin:10px 0}
+  a{color:var(--green2); word-break:break-word}
+  ul{padding-left:22px}
+  hr{border:none;border-top:1px solid var(--line);margin:28px 0}
+  .note{
+    background:var(--honeyBg); color:var(--honeyText);
+    border-radius:14px; padding:14px 16px; font-size:.95rem; margin:16px 0 8px
+  }
+  .card{
+    background:var(--card); border:1px solid var(--line); border-radius:16px;
+    padding:20px 22px; margin:16px 0
+  }
+  .faq{
+    display:grid; grid-template-columns:1fr; gap:12px; margin:16px 0
+  }
+  @media (min-width:620px){ .faq{grid-template-columns:1fr 1fr} }
+  details{
+    background:var(--card); border:1px solid var(--line); border-radius:14px;
+    padding:0 18px; align-self:start; transition:border-color .2s
+  }
+  details[open]{border-color:var(--green2)}
+  summary{
+    list-style:none; cursor:pointer; font-weight:700; font-size:1rem;
+    color:var(--ink); padding:12px 30px 12px 0; position:relative;
+    line-height:1.3; min-height:74px; display:flex; align-items:center
+  }
+  summary::-webkit-details-marker{display:none}
+  summary::after{
+    content:"+"; position:absolute; right:2px; top:50%;
+    transform:translateY(-50%); font-size:1.4rem; font-weight:400;
+    color:var(--green2); line-height:1
+  }
+  details[open] summary::after{content:"\2212"} /* minus */
+  details > p{margin:0; padding:0 0 16px; color:var(--ink); font-size:.98rem}
+  code{background:#f0ece1;padding:1px 6px;border-radius:6px;font-size:.9em}
+  footer{color:var(--muted); font-size:.85rem; margin-top:40px; text-align:center}
+  @media (prefers-color-scheme: dark){
+    :root{--bg:#1E1B16;--card:#2A241C;--ink:#F3EEE4;--muted:#B0A695;--line:#3B342A;
+      --green:#6FB98C;--green2:#7CB894;--honeyBg:#3A2F1C;--honeyText:#EEBE72}
+    code{background:#3B342A}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="logo">🐾</div>
+    <strong>Łapa</strong>
+  </header>
+
+  <h1>Pomoc i kontakt</h1>
+  <p class="updated"><strong>Ostatnia aktualizacja:</strong> 22 lipca 2026</p>
+
+  <p>
+    Cieszymy się, że korzystasz z aplikacji <strong>Łapa</strong> - Twojego
+    offline'owego asystenta opieki nad psem. Poniżej znajdziesz odpowiedzi na
+    najczęstsze pytania oraz dane kontaktowe.
+  </p>
+
+  <h2>Kontakt</h2>
+  <div class="card">
+    Masz pytanie, sugestię lub napotkałeś problem? Napisz do nas:
+    <ul>
+      <li>E-mail wsparcia: <a href="mailto:pj.dev.apps@gmail.com">pj.dev.apps@gmail.com</a></li>
+    </ul>
+    Aby przyspieszyć pomoc, podaj model telefonu, wersję systemu oraz krótki
+    opis problemu (najlepiej ze zrzutem ekranu).
+  </div>
+
+  <h2>Najczęstsze pytania (FAQ)</h2>
+
+  <div class="faq">
+    <details>
+      <summary>Czy aplikacja działa bez internetu?</summary>
+      <p>
+        Tak. Rdzeń Łapy działa <strong>w 100% offline</strong> - profil psa,
+        dziennik, waga i kalendarz profilaktyki są zapisane wyłącznie na Twoim
+        telefonie. Internet potrzebny jest tylko do reklam (wersja darmowa),
+        zakupu Premium oraz otwierania linków.
+      </p>
+    </details>
+
+    <details>
+      <summary>Kupiłem/łam Premium, ale funkcje są zablokowane. Co zrobić?</summary>
+      <p>
+        Wejdź w <strong>Ustawienia → Przywróć zakupy</strong>. Zakup jest
+        powiązany z Twoim kontem Apple ID / Google, więc odzyskasz go także po
+        zmianie telefonu (na tym samym koncie sklepu).
+      </p>
+    </details>
+
+    <details>
+      <summary>Nie przychodzą powiadomienia (karmienie, spacery, profilaktyka).</summary>
+      <p>
+        Upewnij się, że w ustawieniach systemowych telefonu powiadomienia dla
+        aplikacji Łapa są <strong>włączone</strong>. Możesz też sprawdzić
+        działanie przez <strong>Ustawienia → Wyślij powiadomienie testowe</strong>
+        (przyjdzie po około minucie).
+      </p>
+    </details>
+
+    <details>
+      <summary>Skaner karmy nie odczytuje etykiety.</summary>
+      <p>
+        Zrób ostre zdjęcie listy składników w dobrym świetle, bez odblasków. Skan
+        działa <strong>lokalnie na urządzeniu</strong>. Możesz też wpisać lub
+        wkleić skład ręcznie - ocena zadziała tak samo. Skaner to funkcja Premium.
+        Ocena składu ma charakter <strong>orientacyjny i informacyjny</strong> -
+        nie jest diagnozą ani poradą weterynaryjną.
+      </p>
+    </details>
+
+    <details>
+      <summary>Jak dodać kolejnego psa?</summary>
+      <p>
+        W <strong>Ustawieniach</strong> wybierz „Dodaj psa". Obsługa wielu psów to
+        funkcja <strong>Premium</strong> (wersja darmowa obejmuje jednego psa).
+      </p>
+    </details>
+
+    <details>
+      <summary>Jak zmienić lub wycofać zgodę na reklamy?</summary>
+      <p>
+        Jeśli jesteś w Unii Europejskiej, w <strong>Ustawieniach</strong> pojawi
+        się pozycja <strong>„Zgoda na reklamy"</strong>, gdzie możesz zmienić lub
+        wycofać zgodę (RODO/UMP). Reklamy nie są wyświetlane w wersji Premium.
+      </p>
+    </details>
+
+    <details>
+      <summary>Jak usunąć swoje dane?</summary>
+      <p>
+        Możesz edytować lub usuwać poszczególne wpisy w aplikacji, użyć
+        <strong>Ustawienia → Usuń wszystkie dane</strong>, albo odinstalować
+        aplikację - co trwale kasuje wszystkie dane z urządzenia. Nie mamy
+        serwera, więc nie przechowujemy kopii po naszej stronie.
+      </p>
+    </details>
+
+    <details>
+      <summary>Czy moje dane są bezpieczne?</summary>
+      <p>
+        Tak - Łapa nie ma serwera i nie wysyła Twoich danych o psie do nas ani do
+        osób trzecich. Szczegóły znajdziesz w naszej
+        <a href="https://pjdevapps.github.io/legal/lapa/privacy.html">Polityce prywatności</a>.
+      </p>
+    </details>
+  </div>
+
+  <h2>Przydatne linki</h2>
+  <ul>
+    <li>Polityka prywatności - <a href="https://pjdevapps.github.io/legal/lapa/privacy.html">kliknij tutaj</a></li>
+    <li>Kontakt - <a href="mailto:pj.dev.apps@gmail.com">napisz do nas</a></li>
+  </ul>
+
+  <hr>
+  <footer>© <span id="y"></span> Łapa · Wszelkie prawa zastrzeżone</footer>
+</div>
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
