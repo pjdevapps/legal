@@ -57,13 +57,16 @@
   </header>
 
   <h1>Polityka prywatności aplikacji Łapa</h1>
-  <p class="updated"><strong>Ostatnia aktualizacja:</strong> 26 lipca 2026</p>
+  <p class="updated"><strong>Ostatnia aktualizacja:</strong> 20 października 2026</p>
 
   <p>
     Niniejsza Polityka prywatności opisuje, jak aplikacja mobilna <strong>Łapa</strong>
     („Aplikacja") przetwarza informacje. Aplikacja jest przeznaczona na rynek
-    polski i działa <strong>w trybie offline</strong> - dane opiekuna i psa
-    pozostają na urządzeniu użytkownika.
+    polski, a jej podstawowe funkcje działają <strong>w trybie offline</strong> -
+    dane, które wpisujesz o sobie i o psie, pozostają na Twoim urządzeniu. Do sieci
+    trafiają wyłącznie dane techniczne opisane w sekcjach 3-6: w wersji darmowej
+    reklamy, zakupy oraz statystyki instalacji i korzystania z Aplikacji, a w wersji
+    Premium tylko dane niezbędne do obsługi zakupu.
   </p>
 
   <h2>1. Administrator danych</h2>
@@ -120,8 +123,9 @@
     <li>Dostawcy technologii reklamowych Google: <a href="https://support.google.com/admob/answer/9012903">https://support.google.com/admob/answer/9012903</a></li>
   </ul>
   <p>
-    W wersji <strong>Premium reklamy nie są wyświetlane</strong> i SDK reklam nie
-    jest wykorzystywane.
+    W wersji <strong>Premium reklamy nie są wyświetlane</strong> i SDK reklam
+    Google AdMob nie jest wykorzystywane. Nie są też zbierane statystyki opisane
+    w sekcji 5.
   </p>
 
   <h2>4. Zgoda na reklamy (RODO / UE) oraz iOS App Tracking Transparency</h2>
@@ -140,7 +144,53 @@
     identyfikator reklamowy.
   </p>
 
-  <h2>5. Zakupy w Aplikacji (Premium)</h2>
+  <h2>5. Statystyki instalacji (Google Analytics dla Firebase)</h2>
+  <p>
+    W darmowej wersji Aplikacji korzystamy z usługi <strong>Google Analytics dla
+    Firebase</strong>, dostarczanej przez <strong>Google Ireland Limited</strong>
+    (Gordon House, Barrow Street, Dublin 4, Irlandia) oraz <strong>Google LLC</strong>
+    (USA). Używamy jej wyłącznie w zakresie zdarzeń zbieranych automatycznie przez
+    SDK. Nie wysyłamy własnych zdarzeń ani żadnych danych wpisanych w Aplikacji
+    (profil psa, dziennik, waga, zdjęcia, notatki).
+  </p>
+  <p>Cele:</p>
+  <ul>
+    <li>pomiar liczby instalacji i uruchomień Aplikacji,</li>
+    <li>pomiar skuteczności naszych kampanii reklamowych w Google Ads (np. ile instalacji przyniosła reklama),</li>
+    <li>zbiorcze statystyki korzystania (liczba aktywnych użytkowników, długość sesji, wersje Aplikacji i systemu).</li>
+  </ul>
+  <p>Zakres danych:</p>
+  <ul>
+    <li>losowy identyfikator instalacji Aplikacji (App Instance ID), a na iOS także identyfikator dostawcy (IDFV),</li>
+    <li>identyfikator reklamowy: Apple IDFA - wyłącznie po Twojej zgodzie w oknie ATT, Android Advertising ID - jeśli nie został usunięty w ustawieniach systemu,</li>
+    <li>przybliżona lokalizacja (kraj, region, miasto) wyznaczana z adresu IP,</li>
+    <li>model urządzenia, wersja systemu, wersja Aplikacji, język i strefa czasowa,</li>
+    <li>zdarzenia automatyczne: pierwsze uruchomienie, rozpoczęcie sesji, czas korzystania, aktualizacja Aplikacji lub systemu,</li>
+    <li>zakupy w Aplikacji wykrywane automatycznie przez system płatności (identyfikator i nazwa produktu, cena, waluta),</li>
+    <li>źródło instalacji (np. kampania reklamowa, z której pobrano Aplikację).</li>
+  </ul>
+  <p>
+    Aplikacja nie ma kont użytkowników, więc nie łączymy tych danych z imieniem,
+    adresem e-mail ani innym identyfikatorem Twojej osoby. To, czy dane mogą być
+    wykorzystane do personalizacji reklam, zależy od Twojej decyzji w oknie zgody.
+  </p>
+  <p>
+    Aplikacja uruchamia Google Analytics dla Firebase z <strong>wyłączonym
+    zbieraniem danych</strong>. Dane są wysyłane dopiero po Twojej decyzji w oknie
+    zgody (formularz Google UMP wyświetlany na ekranie głównym). Jeśli odmówisz,
+    Aplikacja wysyła tylko zdarzenia bez identyfikatorów, służące Google do
+    zbiorczego modelowania. Swoją decyzję możesz zmienić lub wycofać zgodę
+    w <strong>Ustawienia → Zgoda na reklamy</strong> (ten sam formularz Google).
+    W wersji <strong>Premium</strong> okno zgody nie jest wyświetlane, a Google
+    Analytics dla Firebase nie wysyła żadnych danych.
+  </p>
+  <p>Więcej informacji:</p>
+  <ul>
+    <li>Prywatność w Firebase: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></li>
+    <li>Jak Google wykorzystuje dane z aplikacji partnerów: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></li>
+  </ul>
+
+  <h2>6. Zakupy w Aplikacji (Premium)</h2>
   <p>
     Wersję Premium udostępniamy przez systemy płatności <strong>Apple App
     Store</strong> oraz <strong>Google Play</strong>, a stan zakupu obsługujemy
@@ -155,31 +205,48 @@
   </ul>
   <p>Nie przechowujemy danych Twojej karty płatniczej.</p>
 
-  <h2>6. Podmioty przetwarzające / odbiorcy danych</h2>
+  <h2>7. Podmioty przetwarzające / odbiorcy danych</h2>
   <p>Poza działaniem podstawowym (offline) dane mogą być przetwarzane przez:</p>
   <ul>
     <li><strong>Google</strong> (AdMob, UMP) - reklamy i zgoda,</li>
+    <li><strong>Google</strong> (Google Analytics dla Firebase, Google Ads) - statystyki instalacji i korzystania oraz pomiar skuteczności naszych reklam (wersja darmowa),</li>
     <li><strong>Apple / Google</strong> - płatności i dystrybucja,</li>
     <li><strong>RevenueCat</strong> - obsługa uprawnień zakupu.</li>
   </ul>
   <p>Aplikacja nie sprzedaje danych osobowych.</p>
 
-  <h2>7. Podstawy prawne (RODO)</h2>
+  <h2>8. Podstawy prawne (RODO)</h2>
   <ul>
     <li><strong>Zgoda</strong> (art. 6 ust. 1 lit. a RODO) - reklamy spersonalizowane i ATT.</li>
+    <li><strong>Zgoda</strong> (art. 6 ust. 1 lit. a RODO w zw. z art. 399 Prawa komunikacji elektronicznej) - statystyki instalacji i pomiar skuteczności naszych reklam (Google Analytics dla Firebase). Zgodę możesz wycofać w dowolnym momencie w Ustawienia → Zgoda na reklamy, bez wpływu na zgodność z prawem przetwarzania sprzed jej wycofania.</li>
     <li><strong>Wykonanie umowy</strong> (art. 6 ust. 1 lit. b RODO) - realizacja zakupu Premium.</li>
     <li><strong>Prawnie uzasadniony interes</strong> (art. 6 ust. 1 lit. f RODO) - bezpieczeństwo, zapobieganie nadużyciom i podstawowa (niespersonalizowana) obsługa reklam tam, gdzie jest dozwolona.</li>
   </ul>
 
-  <h2>8. Okres przechowywania</h2>
+  <h2>9. Okres przechowywania</h2>
   <p>
     Dane wprowadzone w Aplikacji przechowywane są lokalnie do czasu ich usunięcia
-    przez użytkownika lub odinstalowania Aplikacji. Dane przetwarzane przez
-    Google, Apple i RevenueCat podlegają okresom retencji określonym w ich
-    politykach.
+    przez użytkownika lub odinstalowania Aplikacji. Dane zdarzeń powiązane
+    z identyfikatorami w Google Analytics dla Firebase przechowujemy przez
+    <strong>2 miesiące</strong>, po czym są automatycznie usuwane. Zbiorcze raporty
+    bez identyfikatorów mogą być przechowywane dłużej. Dane przetwarzane przez
+    Google na potrzeby reklam, Apple i RevenueCat podlegają okresom retencji
+    określonym w ich politykach.
   </p>
 
-  <h2>9. Twoje prawa</h2>
+  <h2>10. Przekazywanie danych poza Europejski Obszar Gospodarczy</h2>
+  <p>
+    Część odbiorców (Google LLC, Apple Inc., RevenueCat, Inc.) ma siedzibę w USA,
+    dlatego dane mogą być przekazywane poza EOG. Google LLC uczestniczy w programie
+    <strong>EU-U.S. Data Privacy Framework</strong>, objętym decyzją Komisji
+    Europejskiej z 10 lipca 2023 r. stwierdzającą odpowiedni stopień ochrony danych.
+    Podstawą przekazania danych do Apple Inc. i RevenueCat, Inc. są standardowe
+    klauzule umowne zatwierdzone przez Komisję Europejską. Listę podmiotów
+    certyfikowanych w Data Privacy Framework znajdziesz na
+    <a href="https://www.dataprivacyframework.gov/list">https://www.dataprivacyframework.gov/list</a>.
+  </p>
+
+  <h2>11. Twoje prawa</h2>
   <p>
     Masz prawo do dostępu, sprostowania, usunięcia i ograniczenia przetwarzania
     oraz do sprzeciwu i wycofania zgody. Dane lokalne możesz w każdej chwili:
@@ -189,24 +256,36 @@
     <li>trwale skasować, odinstalowując Aplikację.</li>
   </ul>
   <p>
+    <strong>Statystyki (Google Analytics dla Firebase).</strong> Zgodę możesz
+    w każdej chwili wycofać, a w sprawie danych już zebranych możesz napisać na
+    <strong>pj.dev.apps@gmail.com</strong>. Zakres zbieranych danych możesz też
+    ograniczyć sam:
+  </p>
+  <ul>
+    <li>w Aplikacji: <strong>Ustawienia → Zgoda na reklamy</strong> - w tym samym formularzu Google zmienisz lub wycofasz zgodę,</li>
+    <li>iOS: nie zgadzaj się na śledzenie w oknie ATT albo wyłącz je w Ustawienia → Prywatność i ochrona → Śledzenie - wtedy identyfikator IDFA nie jest udostępniany,</li>
+    <li>Android: usuń identyfikator reklamowy w Ustawienia → Google → Reklamy,</li>
+    <li>odinstalowanie Aplikacji kończy zbieranie danych, a ponowna instalacja tworzy nowy, niepowiązany identyfikator instalacji.</li>
+  </ul>
+  <p>
     Masz też prawo wniesienia skargi do organu nadzorczego - w Polsce:
     <strong>Prezes Urzędu Ochrony Danych Osobowych (UODO)</strong>,
     <a href="https://uodo.gov.pl">https://uodo.gov.pl</a>.
   </p>
 
-  <h2>10. Dzieci</h2>
+  <h2>12. Dzieci</h2>
   <p>
     Aplikacja nie jest skierowana do dzieci poniżej 13. roku życia i nie zbieramy
     świadomie ich danych.
   </p>
 
-  <h2>11. Zmiany polityki</h2>
+  <h2>13. Zmiany polityki</h2>
   <p>
     Możemy aktualizować niniejszą Politykę prywatności. O istotnych zmianach
     poinformujemy w Aplikacji lub aktualizując datę powyżej.
   </p>
 
-  <h2>12. Kontakt</h2>
+  <h2>14. Kontakt</h2>
   <p>Pytania dotyczące prywatności: <strong>pj.dev.apps@gmail.com</strong>.</p>
 
   <hr>
