@@ -52,12 +52,18 @@
 <div class="wrap">
 
   <header>
-    <div class="logo">🐾</div>
+    <div class="logo"><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff" aria-hidden="true">
+      <ellipse cx="12" cy="16.5" rx="5" ry="4.3"/>
+      <ellipse cx="5.8" cy="10.2" rx="2.3" ry="2.9"/>
+      <ellipse cx="10.6" cy="7.3" rx="2.3" ry="2.9"/>
+      <ellipse cx="15" cy="7.3" rx="2.3" ry="2.9"/>
+      <ellipse cx="18.4" cy="10.4" rx="2.1" ry="2.7"/>
+    </svg></div>
     <strong>Łapa</strong>
   </header>
 
   <h1>Polityka prywatności aplikacji Łapa</h1>
-  <p class="updated"><strong>Ostatnia aktualizacja:</strong> 20 października 2026</p>
+  <p class="updated"><strong>Ostatnia aktualizacja:</strong> 6 listopada 2026</p>
 
   <p>
     Niniejsza Polityka prywatności opisuje, jak aplikacja mobilna <strong>Łapa</strong>
@@ -65,8 +71,14 @@
     polski, a jej podstawowe funkcje działają <strong>w trybie offline</strong> -
     dane, które wpisujesz o sobie i o psie, pozostają na Twoim urządzeniu. Do sieci
     trafiają wyłącznie dane techniczne opisane w sekcjach 3-6: w wersji darmowej
-    reklamy, zakupy oraz statystyki instalacji i korzystania z Aplikacji, a w wersji
-    Premium tylko dane niezbędne do obsługi zakupu.
+    reklamy, zakupy, statystyki instalacji i korzystania z Aplikacji (w tym
+    odpowiedź na opcjonalną ankietę) oraz pomiar skuteczności naszych reklam
+    w Google Ads i na TikToku, a w wersji
+    Premium dane niezbędne do obsługi zakupu - bez statystyk korzystania
+    z funkcji; zdarzenia automatyczne Google Analytics dla Firebase są tam
+    zbierane według decyzji w oknie zgody podjętej przed zakupem (sekcja 5).
+    W obu wersjach wysyłane są też techniczne raporty o awariach, bez danych
+    o psie (sekcja 5a).
   </p>
 
   <h2>1. Administrator danych</h2>
@@ -84,7 +96,8 @@
   <p>
     Aplikacja <strong>nie posiada serwera</strong> i nie wysyła do nas danych
     wprowadzanych przez użytkownika. Wyłącznie na Twoim urządzeniu (lokalna baza
-    SQLite i ustawienia) przechowywane są:
+    SQLite i ustawienia) przechowywane są - z jednym wyjątkiem: opcjonalnej
+    kopii zapasowej na Twoim koncie iCloud (tylko iPhone, opis niżej):
   </p>
   <ul>
     <li>profil psa (imię, rasa, płeć, waga, zdjęcie),</li>
@@ -94,11 +107,30 @@
   </ul>
   <p>
     Zdjęcia zapisywane są w prywatnym katalogu Aplikacji i <strong>nie opuszczają
-    urządzenia</strong>. Skanowanie etykiet karmy (funkcja Premium) oraz
+    urządzenia</strong> - poza kopią zapasową w iCloud (opis niżej). Skanowanie etykiet karmy (funkcja Premium) oraz
     rozpoznawanie tekstu odbywają się <strong>lokalnie</strong> (on-device) -
     obrazy nie są wysyłane na zewnątrz. Uprawnienia (aparat, galeria,
     powiadomienia) są wykorzystywane wyłącznie do funkcji, których dotyczą, i
     tylko po Twojej zgodzie.
+  </p>
+
+  <h3>Kopia zapasowa w iCloud (iPhone)</h3>
+  <p>
+    Na iPhonie Aplikacja może zapisywać kopię zapasową Twoich danych
+    w <strong>prywatnym kontenerze Aplikacji na Twoim koncie iCloud</strong>
+    (dostawca: Apple). Kopia nie trafia do nas - nie mamy do niej dostępu.
+    Funkcja jest bezpłatna, działa tylko przy włączonym iCloud Drive
+    i służy do przeniesienia danych na nowy telefon lub odtworzenia ich po
+    reinstalacji.
+  </p>
+  <ul>
+    <li><strong>Co jest w kopii:</strong> baza Aplikacji (profile psów, dziennik opieki, pomiary wagi, terminy profilaktyki), zdjęcia oraz wybrane ustawienia (przypomnienia i ich godziny, plan dnia, motyw, ukończone treningi, dane „karty opiekuna"). W kopii nie ma statusu Premium, decyzji o zgodach ani identyfikatorów reklamowych.</li>
+    <li><strong>Kiedy:</strong> automatycznie najwyżej raz dziennie, gdy dane się zmieniły (przełącznik „Kopia automatyczna", domyślnie włączony), oraz ręcznie przyciskiem „Zrób kopię teraz" - w Ustawienia → Kopia w iCloud.</li>
+    <li><strong>Jak wyłączyć lub usunąć:</strong> wyłącz „Kopię automatyczną" albo usuń kopię przyciskiem „Usuń kopię z iCloud" (kopie zrobione na innych urządzeniach zostają). „Usuń wszystkie dane" i odinstalowanie Aplikacji kopii w iCloud nie kasują.</li>
+  </ul>
+  <p>
+    Przechowywanie kopii w iCloud podlega Twojej umowie z Apple
+    i <a href="https://www.apple.com/legal/privacy/pl/">Polityce prywatności Apple</a>.
   </p>
 
   <h2>3. Reklamy (Google AdMob)</h2>
@@ -124,8 +156,9 @@
   </ul>
   <p>
     W wersji <strong>Premium reklamy nie są wyświetlane</strong> i SDK reklam
-    Google AdMob nie jest wykorzystywane. Nie są też zbierane statystyki opisane
-    w sekcji 5.
+    Google AdMob nie jest wykorzystywane. Nie wysyłamy też statystyk korzystania
+    z funkcji; zdarzenia automatyczne Google Analytics dla Firebase są zbierane
+    według decyzji w oknie zgody podjętej przed zakupem (sekcja 5).
   </p>
 
   <h2>4. Zgoda na reklamy (RODO / UE) oraz iOS App Tracking Transparency</h2>
@@ -149,15 +182,18 @@
     W darmowej wersji Aplikacji korzystamy z usługi <strong>Google Analytics dla
     Firebase</strong>, dostarczanej przez <strong>Google Ireland Limited</strong>
     (Gordon House, Barrow Street, Dublin 4, Irlandia) oraz <strong>Google LLC</strong>
-    (USA). Używamy jej wyłącznie w zakresie zdarzeń zbieranych automatycznie przez
-    SDK. Nie wysyłamy własnych zdarzeń ani żadnych danych wpisanych w Aplikacji
-    (profil psa, dziennik, waga, zdjęcia, notatki).
+    (USA). Korzystamy ze zdarzeń zbieranych automatycznie przez SDK oraz
+    z własnych zdarzeń o korzystaniu z funkcji opisanych niżej. Nie wysyłamy
+    żadnych danych wpisanych w Aplikacji (profil psa, dziennik, waga, zdjęcia,
+    notatki). Jedynym wyjątkiem jest krótki, opcjonalny tekst w ankiecie
+    „Czego zabrakło?" (opis niżej).
   </p>
   <p>Cele:</p>
   <ul>
     <li>pomiar liczby instalacji i uruchomień Aplikacji,</li>
     <li>pomiar skuteczności naszych kampanii reklamowych w Google Ads (np. ile instalacji przyniosła reklama),</li>
-    <li>zbiorcze statystyki korzystania (liczba aktywnych użytkowników, długość sesji, wersje Aplikacji i systemu).</li>
+    <li>zbiorcze statystyki korzystania (liczba aktywnych użytkowników, długość sesji, wersje Aplikacji i systemu),</li>
+    <li>poprawa Aplikacji: zrozumienie, z których funkcji ludzie korzystają, gdzie rezygnują oraz dlaczego nie wybierają Premium lub przestają korzystać z Aplikacji.</li>
   </ul>
   <p>Zakres danych:</p>
   <ul>
@@ -167,8 +203,63 @@
     <li>model urządzenia, wersja systemu, wersja Aplikacji, język i strefa czasowa,</li>
     <li>zdarzenia automatyczne: pierwsze uruchomienie, rozpoczęcie sesji, czas korzystania, aktualizacja Aplikacji lub systemu,</li>
     <li>zakupy w Aplikacji wykrywane automatycznie przez system płatności (identyfikator i nazwa produktu, cena, waluta),</li>
-    <li>źródło instalacji (np. kampania reklamowa, z której pobrano Aplikację).</li>
+    <li>źródło instalacji (np. kampania reklamowa, z której pobrano Aplikację),</li>
+    <li>rodzaj planu: wersja darmowa, okres próbny, plan roczny albo „na zawsze" (bez identyfikatora zakupu, ceny i dat) - jako właściwość dołączana do powyższych zdarzeń, wysyłana na tych samych zasadach co one, także w wersji Premium. Służy wyłącznie do zbiorczych statystyk, np. ilu aktywnych użytkowników korzysta z wersji darmowej, a ilu z Premium.</li>
   </ul>
+  <p>
+    Oprócz zdarzeń automatycznych Aplikacja wysyła własne zdarzenia
+    o korzystaniu z funkcji. Pełna lista:
+  </p>
+  <ul>
+    <li>ekrany: <code>screen_view</code> (który ekran otwarto),</li>
+    <li>pierwsza konfiguracja: <code>onboarding_step</code>, <code>onboarding_complete</code>,</li>
+    <li>pies, wpisy, waga, profilaktyka: <code>dog_add</code>, <code>entry_add</code>, <code>task_complete</code>, <code>weight_add</code>, <code>proph_done</code>,</li>
+    <li>powiadomienia: <code>notification_permission</code>, <code>notification_open</code>,</li>
+    <li>karta PDF i skaner: <code>pdf_export</code>, <code>scanner_use</code>,</li>
+    <li>kopia w iCloud: <code>icloud_backup</code>,</li>
+    <li>ekran zakupu i zakupy: <code>paywall_view</code>, <code>paywall_close</code>, <code>paywall_plan_select</code>, <code>trial_start</code>, <code>purchase</code>, <code>purchase_cancelled</code>, <code>purchase_failed</code>, <code>restore_purchases</code>,</li>
+    <li>szkolenia: <code>training_open</code>, <code>training_session_end</code>,</li>
+    <li>ankieta „Czego zabrakło?": <code>survey_show</code>, <code>survey_answer</code>, <code>survey_dismiss</code>.</li>
+  </ul>
+  <p>
+    Zdarzenie zawiera tylko swoją nazwę i parametry z zamkniętej listy
+    kategorii i kodów, np. rodzaj wpisu, krok konfiguracji, ekran, z którego
+    wszedłeś na ekran zakupu, wybrany plan, przedział skuteczności sesji
+    szkoleniowej, wynik operacji albo kod błędu sklepu. Przy rozpoczęciu okresu
+    próbnego i zakupie wysyłany jest też identyfikator produktu, a przy zakupie
+    jego kwota i waluta. Nie wysyłamy żadnych danych o psie ani treści wpisów
+    (imienia, rasy, wagi, notatek, tytułów, zdjęć). Jedyny wyjątek to opcjonalny
+    tekst w ankiecie, opisany niżej.
+  </p>
+  <p>
+    Własne zdarzenia podlegają tym samym zasadom co pozostałe dane z tej
+    sekcji: wychodzą dopiero po Twojej decyzji w oknie zgody (poza EOG, Wielką
+    Brytanią i Szwajcarią - bez okna, patrz niżej), w wersji Premium nie są
+    wysyłane (po zakupie najpóźniej od następnego uruchomienia Aplikacji),
+    a w wersjach testowych Aplikacji nie są wysyłane wcale.
+  </p>
+
+  <h3>Ankieta „Czego zabrakło?"</h3>
+  <p>
+    W wersji darmowej Aplikacja może raz zapytać, czego Ci zabrakło: po drugim
+    zamknięciu ekranu zakupu bez zakupu albo po powrocie do Aplikacji po
+    kilkudniowej przerwie.
+  </p>
+  <ul>
+    <li><strong>Cel:</strong> poprawa Aplikacji - zrozumienie, dlaczego użytkownicy nie wybierają Premium lub przestają korzystać z Aplikacji.</li>
+    <li><strong>Dobrowolność:</strong> ankieta pokazuje się najwyżej raz, nie ma jej w wersji Premium, nie pokazuje się bez zgody na statystyki i możesz ją pominąć jednym stuknięciem („Pomiń").</li>
+    <li><strong>Zakres:</strong> wybrany powód (np. „Za wysoka cena", „Brakuje mi funkcji") oraz - tylko gdy wybierzesz „Inne" - Twój krótki tekst, najwyżej 100 znaków. Do tego informacja, co wywołało ankietę (ekran zakupu albo powrót do Aplikacji) i czy ją pominięto.</li>
+  </ul>
+  <p>
+    <strong>W polu „Inne" nie wpisuj danych osobowych</strong> (imienia
+    i nazwiska, adresu, telefonu, adresu e-mail, danych o zdrowiu ani innych
+    informacji, które pozwalają Cię zidentyfikować). Przypomina o tym dopisek
+    „Bez danych osobowych" pod polem. Dla ochrony Aplikacja przed wysłaniem
+    automatycznie wycina z tekstu adresy e-mail, ciągi od 7 cyfr (np. numer
+    telefonu, PESEL, numer konta) i adresy stron internetowych. Tekst trafia
+    do Google Analytics dla Firebase jako parametr <code>note</code> zdarzenia
+    <code>survey_answer</code> i nie jest przekazywany do TikToka.
+  </p>
   <p>
     Aplikacja nie ma kont użytkowników, więc nie łączymy tych danych z imieniem,
     adresem e-mail ani innym identyfikatorem Twojej osoby. To, czy dane mogą być
@@ -176,18 +267,95 @@
   </p>
   <p>
     Aplikacja uruchamia Google Analytics dla Firebase z <strong>wyłączonym
-    zbieraniem danych</strong>. Dane są wysyłane dopiero po Twojej decyzji w oknie
-    zgody (formularz Google UMP wyświetlany na ekranie głównym). Jeśli odmówisz,
+    zbieraniem danych</strong>. W Europejskim Obszarze Gospodarczym, Wielkiej
+    Brytanii i Szwajcarii dane są wysyłane dopiero po Twojej decyzji w oknie
+    zgody (formularz Google UMP wyświetlany na ekranie głównym). Poza tym
+    obszarem okno zgody się nie pojawia, a zbieranie włącza się bez niego
+    (w wersji darmowej). Jeśli odmówisz,
     Aplikacja wysyła tylko zdarzenia bez identyfikatorów, służące Google do
     zbiorczego modelowania. Swoją decyzję możesz zmienić lub wycofać zgodę
-    w <strong>Ustawienia → Zgoda na reklamy</strong> (ten sam formularz Google).
-    W wersji <strong>Premium</strong> okno zgody nie jest wyświetlane, a Google
-    Analytics dla Firebase nie wysyła żadnych danych.
+    w <strong>Ustawienia → Zgoda na reklamy</strong> (ten sam formularz Google),
+    a w wersji Premium w <strong>Ustawienia → Zgoda na statystyki</strong>.
+    Po wycofaniu zgody Aplikacja, tak jak przy odmowie, wysyła już tylko
+    zdarzenia bez identyfikatorów.
+    W wersji <strong>Premium</strong> okno zgody nie jest wyświetlane samo
+    i nie wysyłamy statystyk korzystania z funkcji. Jeśli zgodę wyrażono przed
+    zakupem, Google Analytics dla Firebase dalej zbiera zdarzenia automatyczne
+    (np. sesje, zakup i jego odnowienia) zgodnie z tą decyzją. Jeśli przed
+    zakupem odmówiono, wysyłane są tylko zdarzenia bez identyfikatorów. Jeśli
+    przed zakupem nie podjęto decyzji, w Premium nic nie jest wysyłane.
   </p>
   <p>Więcej informacji:</p>
   <ul>
     <li>Prywatność w Firebase: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></li>
     <li>Jak Google wykorzystuje dane z aplikacji partnerów: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></li>
+  </ul>
+
+  <h2>5a. Raporty o awariach (Firebase Crashlytics)</h2>
+  <p>
+    Aby wykrywać i naprawiać błędy, Aplikacja korzysta z usługi <strong>Firebase
+    Crashlytics</strong>, dostarczanej przez <strong>Google Ireland Limited</strong>
+    (Gordon House, Barrow Street, Dublin 4, Irlandia) oraz <strong>Google LLC</strong>
+    (USA). Gdy Aplikacja ulegnie awarii lub wystąpi w niej nieobsłużony błąd,
+    do Google wysyłany jest raport techniczny - zarówno w wersji darmowej, jak
+    i Premium. Raport nie zawiera żadnych danych wpisanych w Aplikacji (profil
+    psa, dziennik, waga, zdjęcia, notatki).
+  </p>
+  <p>Zakres danych:</p>
+  <ul>
+    <li>przebieg błędu (stos wywołań, opis wyjątku) i stan Aplikacji w chwili awarii,</li>
+    <li>losowy identyfikator instalacji Crashlytics (nie jest identyfikatorem reklamowym),</li>
+    <li>model urządzenia, wersja systemu, wersja Aplikacji, wolna pamięć i miejsce na dysku, orientacja ekranu,</li>
+    <li>informacja, czy Aplikacja działa w wersji darmowej czy Premium,</li>
+    <li>czas wystąpienia błędu.</li>
+  </ul>
+  <p>
+    Raporty nie służą do reklam ani do profilowania i nie łączymy ich z żadnym
+    identyfikatorem Twojej osoby. Podstawą przetwarzania jest nasz prawnie
+    uzasadniony interes w zapewnieniu stabilności i bezpieczeństwa Aplikacji
+    (art. 6 ust. 1 lit. f RODO). Google przechowuje raporty przez
+    <strong>90 dni</strong>.
+  </p>
+  <p>Więcej informacji: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></p>
+
+  <h2>5b. Pomiar skuteczności reklam na TikToku (TikTok App Events SDK)</h2>
+  <p>
+    Prowadzimy kampanie reklamowe Aplikacji na TikToku. Aby mierzyć ich
+    skuteczność (np. ile instalacji, okresów próbnych i zakupów przyniosła
+    reklama), w wersji darmowej Aplikacja korzysta z <strong>TikTok App Events
+    SDK</strong>. Odbiorcą danych w Europejskim Obszarze Gospodarczym
+    i Szwajcarii jest <strong>TikTok Technology Limited</strong> (10 Earlsfort
+    Terrace, Dublin, D02 T380, Irlandia), który zgodnie ze swoją polityką
+    prywatności działa wspólnie z TikTok Information Technologies UK Limited.
+  </p>
+  <p>Zakres danych:</p>
+  <ul>
+    <li>instalacja i uruchomienie Aplikacji,</li>
+    <li>zakończenie pierwszej konfiguracji (<code>onboarding_complete</code>), rozpoczęcie okresu próbnego (<code>trial_start</code>) oraz zakup planu rocznego lub „na zawsze" (<code>purchase</code>) z kwotą i walutą,</li>
+    <li>identyfikator reklamowy: Apple IDFA - wyłącznie po Twojej zgodzie w oknie ATT, Android Advertising ID - jeśli nie został usunięty w ustawieniach systemu,</li>
+    <li>informacje o urządzeniu (model, wersja systemu, wersja Aplikacji, język) oraz adres IP.</li>
+  </ul>
+  <p>
+    Pozostałe zdarzenia z sekcji 5, w tym odpowiedzi z ankiety, nie są
+    przekazywane do TikToka. Nie przekazujemy też żadnych danych wpisanych
+    w Aplikacji.
+  </p>
+  <p>
+    Obowiązują te same zasady co przy statystykach z sekcji 5: SDK TikToka
+    uruchamia się dopiero po Twojej decyzji w oknie zgody. W Europejskim
+    Obszarze Gospodarczym, Wielkiej Brytanii i Szwajcarii wymaga to Twojej zgody
+    w tym formularzu - TikTok figuruje w nim na liście dostawców jako
+    <strong>TikTok Ad Network</strong>. Bez tej zgody SDK się nie uruchamia.
+    Poza tym obszarem okno zgody się nie pojawia, a SDK uruchamia się bez niego. Do tego czasu TikTok nie
+    otrzymuje żadnych danych, nawet o instalacji. SDK nie działa w wersji
+    Premium ani w wersjach testowych Aplikacji. Zgodę możesz wycofać w
+    <strong>Ustawienia → Zgoda na reklamy</strong>.
+  </p>
+  <p>Więcej informacji:</p>
+  <ul>
+    <li>Polityka prywatności TikTok (EOG): <a href="https://www.tiktok.com/legal/page/eea/privacy-policy/pl">https://www.tiktok.com/legal/page/eea/privacy-policy/pl</a></li>
+    <li>Warunki TikTok for Business dotyczące danych (TikTok Business Products (Data) Terms): <a href="https://ads.tiktok.com/i18n/official/policy/business-products-terms">https://ads.tiktok.com/i18n/official/policy/business-products-terms</a></li>
+    <li>Warunki dla poszczególnych jurysdykcji (w tym EOG): <a href="https://ads.tiktok.com/i18n/official/policy/jurisdiction-specific-terms">https://ads.tiktok.com/i18n/official/policy/jurisdiction-specific-terms</a></li>
   </ul>
 
   <h2>6. Zakupy w Aplikacji (Premium)</h2>
@@ -203,6 +371,15 @@
     <li>Google: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
     <li>RevenueCat: <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a></li>
   </ul>
+  <p>
+    <strong>Atrybucja kampanii Apple Ads (iOS).</strong> Na iPhonie, w wersji
+    Aplikacji pobranej z App Store, RevenueCat odbiera od Apple token
+    atrybucji (Apple AdServices). Służy on do przypisania instalacji, okresu
+    próbnego i zakupu do naszej kampanii w Apple Search Ads (kampania, grupa
+    reklam, słowo kluczowe). Token nie zawiera identyfikatora reklamowego IDFA,
+    nie wymaga zgody w oknie ATT i nie służy do śledzenia między aplikacjami.
+    Więcej: <a href="https://www.revenuecat.com/docs/integrations/attribution/apple-search-ads">https://www.revenuecat.com/docs/integrations/attribution/apple-search-ads</a>.
+  </p>
   <p>Nie przechowujemy danych Twojej karty płatniczej.</p>
 
   <h2>7. Podmioty przetwarzające / odbiorcy danych</h2>
@@ -210,27 +387,38 @@
   <ul>
     <li><strong>Google</strong> (AdMob, UMP) - reklamy i zgoda,</li>
     <li><strong>Google</strong> (Google Analytics dla Firebase, Google Ads) - statystyki instalacji i korzystania oraz pomiar skuteczności naszych reklam (wersja darmowa),</li>
+    <li><strong>TikTok Technology Limited</strong> (TikTok App Events SDK) - pomiar skuteczności naszych reklam na TikToku (wersja darmowa, po zgodzie),</li>
+    <li><strong>Google</strong> (Firebase Crashlytics) - raporty o awariach (wersja darmowa i Premium),</li>
     <li><strong>Apple / Google</strong> - płatności i dystrybucja,</li>
-    <li><strong>RevenueCat</strong> - obsługa uprawnień zakupu.</li>
+    <li><strong>Apple</strong> (iCloud) - opcjonalna kopia zapasowa na Twoim koncie iCloud (tylko iPhone),</li>
+    <li><strong>RevenueCat</strong> - obsługa uprawnień zakupu oraz atrybucja instalacji i zakupów do kampanii Apple Search Ads (token Apple AdServices, iOS),</li>
+    <li><strong>Apple</strong> (AdServices) - przekazanie tokenu atrybucji kampanii Apple Search Ads (iOS).</li>
   </ul>
   <p>Aplikacja nie sprzedaje danych osobowych.</p>
 
   <h2>8. Podstawy prawne (RODO)</h2>
   <ul>
     <li><strong>Zgoda</strong> (art. 6 ust. 1 lit. a RODO) - reklamy spersonalizowane i ATT.</li>
-    <li><strong>Zgoda</strong> (art. 6 ust. 1 lit. a RODO w zw. z art. 399 Prawa komunikacji elektronicznej) - statystyki instalacji i pomiar skuteczności naszych reklam (Google Analytics dla Firebase). Zgodę możesz wycofać w dowolnym momencie w Ustawienia → Zgoda na reklamy, bez wpływu na zgodność z prawem przetwarzania sprzed jej wycofania.</li>
-    <li><strong>Wykonanie umowy</strong> (art. 6 ust. 1 lit. b RODO) - realizacja zakupu Premium.</li>
-    <li><strong>Prawnie uzasadniony interes</strong> (art. 6 ust. 1 lit. f RODO) - bezpieczeństwo, zapobieganie nadużyciom i podstawowa (niespersonalizowana) obsługa reklam tam, gdzie jest dozwolona.</li>
+    <li><strong>Zgoda</strong> (art. 6 ust. 1 lit. a RODO w zw. z art. 399 Prawa komunikacji elektronicznej) - statystyki instalacji i korzystania, w tym odpowiedź na ankietę „Czego zabrakło?" (pokazuje się tylko przy wyrażonej zgodzie, a odpowiedź jest dobrowolna), oraz pomiar skuteczności naszych reklam (Google Analytics dla Firebase, TikTok App Events SDK). Zgodę możesz wycofać w dowolnym momencie w Ustawienia → Zgoda na reklamy (w wersji Premium: Ustawienia → Zgoda na statystyki - pozycja jest, gdy decyzję w oknie zgody podjęto w wersji darmowej), bez wpływu na zgodność z prawem przetwarzania sprzed jej wycofania.</li>
+    <li><strong>Wykonanie umowy</strong> (art. 6 ust. 1 lit. b RODO) - realizacja zakupu Premium oraz kopia zapasowa w iCloud (funkcja Aplikacji, z której korzystasz i którą możesz wyłączyć).</li>
+    <li><strong>Prawnie uzasadniony interes</strong> (art. 6 ust. 1 lit. f RODO) - bezpieczeństwo, zapobieganie nadużyciom, raporty o awariach (Firebase Crashlytics) i podstawowa (niespersonalizowana) obsługa reklam tam, gdzie jest dozwolona.</li>
   </ul>
 
   <h2>9. Okres przechowywania</h2>
   <p>
     Dane wprowadzone w Aplikacji przechowywane są lokalnie do czasu ich usunięcia
-    przez użytkownika lub odinstalowania Aplikacji. Dane zdarzeń powiązane
-    z identyfikatorami w Google Analytics dla Firebase przechowujemy przez
-    <strong>2 miesiące</strong>, po czym są automatycznie usuwane. Zbiorcze raporty
-    bez identyfikatorów mogą być przechowywane dłużej. Dane przetwarzane przez
-    Google na potrzeby reklam, Apple i RevenueCat podlegają okresom retencji
+    przez użytkownika lub odinstalowania Aplikacji. Kopia w iCloud (iPhone)
+    zostaje do czasu jej usunięcia w Ustawieniach. Dane zdarzeń powiązane
+    z identyfikatorami w Google Analytics dla Firebase, w tym odpowiedzi
+    z ankiety, przechowujemy przez <strong>2 miesiące</strong>, po czym są
+    automatycznie usuwane. Dane na poziomie użytkownika (np. identyfikator
+    instalacji i przypisane do niego właściwości) są przechowywane przez
+    <strong>14 miesięcy</strong>, a okres ten liczy się od nowa przy każdej nowej
+    aktywności w Aplikacji. Zbiorcze raporty
+    bez identyfikatorów mogą być przechowywane dłużej. Raporty o awariach
+    (Firebase Crashlytics) są przechowywane przez <strong>90 dni</strong>.
+    Dane przetwarzane przez
+    Google na potrzeby reklam, TikTok, Apple i RevenueCat podlegają okresom retencji
     określonym w ich politykach.
   </p>
 
@@ -241,7 +429,11 @@
     <strong>EU-U.S. Data Privacy Framework</strong>, objętym decyzją Komisji
     Europejskiej z 10 lipca 2023 r. stwierdzającą odpowiedni stopień ochrony danych.
     Podstawą przekazania danych do Apple Inc. i RevenueCat, Inc. są standardowe
-    klauzule umowne zatwierdzone przez Komisję Europejską. Listę podmiotów
+    klauzule umowne zatwierdzone przez Komisję Europejską. TikTok Technology
+    Limited ma siedzibę w Irlandii, ale według swojej polityki prywatności
+    przechowuje dane na serwerach w USA, Malezji i Singapurze i przekazuje je
+    poza EOG na podstawie decyzji stwierdzających odpowiedni stopień ochrony
+    lub standardowych klauzul umownych. Listę podmiotów
     certyfikowanych w Data Privacy Framework znajdziesz na
     <a href="https://www.dataprivacyframework.gov/list">https://www.dataprivacyframework.gov/list</a>.
   </p>
@@ -256,13 +448,20 @@
     <li>trwale skasować, odinstalowując Aplikację.</li>
   </ul>
   <p>
-    <strong>Statystyki (Google Analytics dla Firebase).</strong> Zgodę możesz
+    Na iPhonie „Usuń wszystkie dane" i odinstalowanie nie kasują kopii w iCloud
+    (jeśli ją zrobiono) - usuniesz ją osobno w Ustawienia → Kopia w iCloud →
+    „Usuń kopię z iCloud" (kopie z innych urządzeń zostają).
+  </p>
+  <p>
+    <strong>Statystyki i pomiar reklam (Google Analytics dla Firebase, TikTok).</strong> Zgodę możesz
     w każdej chwili wycofać, a w sprawie danych już zebranych możesz napisać na
-    <strong>pj.dev.apps@gmail.com</strong>. Zakres zbieranych danych możesz też
+    <strong>pj.dev.apps@gmail.com</strong>. W sprawie danych przetwarzanych przez
+    TikTok możesz zwrócić się także bezpośrednio do TikTok (dane kontaktowe
+    w polityce prywatności TikTok, link w sekcji 5b). Zakres zbieranych danych możesz też
     ograniczyć sam:
   </p>
   <ul>
-    <li>w Aplikacji: <strong>Ustawienia → Zgoda na reklamy</strong> - w tym samym formularzu Google zmienisz lub wycofasz zgodę,</li>
+    <li>w Aplikacji: <strong>Ustawienia → Zgoda na reklamy</strong> (w wersji Premium: <strong>Ustawienia → Zgoda na statystyki</strong> - pozycja jest, gdy decyzję w oknie zgody podjęto w wersji darmowej) - w tym samym formularzu Google zmienisz lub wycofasz zgodę,</li>
     <li>iOS: nie zgadzaj się na śledzenie w oknie ATT albo wyłącz je w Ustawienia → Prywatność i ochrona → Śledzenie - wtedy identyfikator IDFA nie jest udostępniany,</li>
     <li>Android: usuń identyfikator reklamowy w Ustawienia → Google → Reklamy,</li>
     <li>odinstalowanie Aplikacji kończy zbieranie danych, a ponowna instalacja tworzy nowy, niepowiązany identyfikator instalacji.</li>
