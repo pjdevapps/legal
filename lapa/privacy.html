@@ -208,19 +208,15 @@
   </ul>
   <p>
     Oprócz zdarzeń automatycznych Aplikacja wysyła własne zdarzenia
-    o korzystaniu z funkcji. Pełna lista:
+    o korzystaniu z funkcji: które ekrany są otwierane, przebieg pierwszej
+    konfiguracji, dodanie psa, wpisu lub pomiaru wagi, odhaczenie zadania lub
+    terminu profilaktyki, zgoda na powiadomienia i ich otwarcie, udostępnienie
+    karty PDF, użycie skanera, wykonanie kopii w iCloud, wejście na ekran zakupu
+    i wyjście z niego, wybór planu, rozpoczęcie okresu próbnego, zakup, jego
+    anulowanie, błąd lub przywrócenie zakupów, otwarcie kursu i zakończenie
+    sesji szkoleniowej, a także wyświetlenie, pominięcie i odpowiedź na ankietę
+    „Czego zabrakło?".
   </p>
-  <ul>
-    <li>ekrany: <code>screen_view</code> (który ekran otwarto),</li>
-    <li>pierwsza konfiguracja: <code>onboarding_step</code>, <code>onboarding_complete</code>,</li>
-    <li>pies, wpisy, waga, profilaktyka: <code>dog_add</code>, <code>entry_add</code>, <code>task_complete</code>, <code>weight_add</code>, <code>proph_done</code>,</li>
-    <li>powiadomienia: <code>notification_permission</code>, <code>notification_open</code>,</li>
-    <li>karta PDF i skaner: <code>pdf_export</code>, <code>scanner_use</code>,</li>
-    <li>kopia w iCloud: <code>icloud_backup</code>,</li>
-    <li>ekran zakupu i zakupy: <code>paywall_view</code>, <code>paywall_close</code>, <code>paywall_plan_select</code>, <code>trial_start</code>, <code>purchase</code>, <code>purchase_cancelled</code>, <code>purchase_failed</code>, <code>restore_purchases</code>,</li>
-    <li>szkolenia: <code>training_open</code>, <code>training_session_end</code>,</li>
-    <li>ankieta „Czego zabrakło?": <code>survey_show</code>, <code>survey_answer</code>, <code>survey_dismiss</code>.</li>
-  </ul>
   <p>
     Zdarzenie zawiera tylko swoją nazwę i parametry z zamkniętej listy
     kategorii i kodów, np. rodzaj wpisu, krok konfiguracji, ekran, z którego
@@ -257,8 +253,8 @@
     „Bez danych osobowych" pod polem. Dla ochrony Aplikacja przed wysłaniem
     automatycznie wycina z tekstu adresy e-mail, ciągi od 7 cyfr (np. numer
     telefonu, PESEL, numer konta) i adresy stron internetowych. Tekst trafia
-    do Google Analytics dla Firebase jako parametr <code>note</code> zdarzenia
-    <code>survey_answer</code> i nie jest przekazywany do TikToka.
+    razem z odpowiedzią do Google Analytics dla Firebase i nie jest
+    przekazywany do TikToka.
   </p>
   <p>
     Aplikacja nie ma kont użytkowników, więc nie łączymy tych danych z imieniem,
@@ -266,24 +262,20 @@
     wykorzystane do personalizacji reklam, zależy od Twojej decyzji w oknie zgody.
   </p>
   <p>
-    Aplikacja uruchamia Google Analytics dla Firebase z <strong>wyłączonym
-    zbieraniem danych</strong>. W Europejskim Obszarze Gospodarczym, Wielkiej
-    Brytanii i Szwajcarii dane są wysyłane dopiero po Twojej decyzji w oknie
-    zgody (formularz Google UMP wyświetlany na ekranie głównym). Poza tym
-    obszarem okno zgody się nie pojawia, a zbieranie włącza się bez niego
-    (w wersji darmowej). Jeśli odmówisz,
-    Aplikacja wysyła tylko zdarzenia bez identyfikatorów, służące Google do
-    zbiorczego modelowania. Swoją decyzję możesz zmienić lub wycofać zgodę
-    w <strong>Ustawienia → Zgoda na reklamy</strong> (ten sam formularz Google),
-    a w wersji Premium w <strong>Ustawienia → Zgoda na statystyki</strong>.
-    Po wycofaniu zgody Aplikacja, tak jak przy odmowie, wysyła już tylko
-    zdarzenia bez identyfikatorów.
-    W wersji <strong>Premium</strong> okno zgody nie jest wyświetlane samo
-    i nie wysyłamy statystyk korzystania z funkcji. Jeśli zgodę wyrażono przed
-    zakupem, Google Analytics dla Firebase dalej zbiera zdarzenia automatyczne
-    (np. sesje, zakup i jego odnowienia) zgodnie z tą decyzją. Jeśli przed
-    zakupem odmówiono, wysyłane są tylko zdarzenia bez identyfikatorów. Jeśli
-    przed zakupem nie podjęto decyzji, w Premium nic nie jest wysyłane.
+    Google Analytics dla Firebase startuje z <strong>wyłączonym zbieraniem
+    danych</strong>. W Europejskim Obszarze Gospodarczym, Wielkiej Brytanii
+    i Szwajcarii dane są wysyłane dopiero po Twojej decyzji w oknie zgody
+    (formularz Google UMP). Poza tym obszarem okno się nie pojawia, a zbieranie
+    włącza się samo. Jeśli odmówisz lub wycofasz zgodę, Aplikacja wysyła tylko
+    zdarzenia bez identyfikatorów, służące Google do zbiorczego modelowania.
+    Decyzję zmienisz w <strong>Ustawienia → Zgoda na reklamy</strong> (w wersji
+    Premium: <strong>Ustawienia → Zgoda na statystyki</strong>).
+  </p>
+  <p>
+    W wersji <strong>Premium</strong> nie wysyłamy statystyk korzystania
+    z funkcji. Zdarzenia automatyczne (np. sesje, odnowienia zakupu) są
+    zbierane według decyzji podjętej w oknie zgody przed zakupem, a jeśli jej
+    nie podjęto - nic nie jest wysyłane.
   </p>
   <p>Więcej informacji:</p>
   <ul>
@@ -331,7 +323,7 @@
   <p>Zakres danych:</p>
   <ul>
     <li>instalacja i uruchomienie Aplikacji,</li>
-    <li>zakończenie pierwszej konfiguracji (<code>onboarding_complete</code>), rozpoczęcie okresu próbnego (<code>trial_start</code>) oraz zakup planu rocznego lub „na zawsze" (<code>purchase</code>) z kwotą i walutą,</li>
+    <li>zakończenie pierwszej konfiguracji, rozpoczęcie okresu próbnego oraz zakup planu rocznego lub „na zawsze" z kwotą i walutą,</li>
     <li>identyfikator reklamowy: Apple IDFA - wyłącznie po Twojej zgodzie w oknie ATT, Android Advertising ID - jeśli nie został usunięty w ustawieniach systemu,</li>
     <li>informacje o urządzeniu (model, wersja systemu, wersja Aplikacji, język) oraz adres IP.</li>
   </ul>
