@@ -63,7 +63,7 @@
   </header>
 
   <h1>Polityka prywatności aplikacji Łapa</h1>
-  <p class="updated"><strong>Ostatnia aktualizacja:</strong> 6 listopada 2026</p>
+  <p class="updated"><strong>Ostatnia aktualizacja:</strong> 10 listopada 2026</p>
 
   <p>
     Niniejsza Polityka prywatności opisuje, jak aplikacja mobilna <strong>Łapa</strong>
@@ -74,9 +74,9 @@
     reklamy, zakupy, statystyki instalacji i korzystania z Aplikacji (w tym
     odpowiedź na opcjonalną ankietę) oraz pomiar skuteczności naszych reklam
     w Google Ads i na TikToku, a w wersji
-    Premium dane niezbędne do obsługi zakupu - bez statystyk korzystania
-    z funkcji; zdarzenia automatyczne Google Analytics dla Firebase są tam
-    zbierane według decyzji w oknie zgody podjętej przed zakupem (sekcja 5).
+    Premium dane niezbędne do obsługi zakupu oraz zdarzenia ścieżki zakupu
+    i pomiar reklam (po zgodzie) - bez statystyk korzystania z funkcji; zdarzenia automatyczne Google Analytics dla Firebase są tam
+    zbierane według decyzji w oknie zgody (sekcja 5).
     W obu wersjach wysyłane są też techniczne raporty o awariach, bez danych
     o psie (sekcja 5a).
   </p>
@@ -158,23 +158,30 @@
     W wersji <strong>Premium reklamy nie są wyświetlane</strong> i SDK reklam
     Google AdMob nie jest wykorzystywane. Nie wysyłamy też statystyk korzystania
     z funkcji; zdarzenia automatyczne Google Analytics dla Firebase są zbierane
-    według decyzji w oknie zgody podjętej przed zakupem (sekcja 5).
+    według decyzji w oknie zgody (sekcja 5).
   </p>
 
   <h2>4. Zgoda na reklamy (RODO / UE) oraz iOS App Tracking Transparency</h2>
   <p>
-    Jeśli znajdujesz się w Europejskim Obszarze Gospodarczym, Wielkiej Brytanii
-    lub Szwajcarii, przed wyświetleniem reklam poprosimy Cię o zgodę za pomocą
-    <strong>Google User Messaging Platform (UMP)</strong> - zgodnie z wymogami
-    RODO. Możesz wtedy wyrazić zgodę na reklamy spersonalizowane albo wybrać
-    reklamy niespersonalizowane.
+    Przy pierwszym uruchomieniu Aplikacji, przed konfiguracją, w Europejskim
+    Obszarze Gospodarczym, Wielkiej Brytanii i Szwajcarii wyświetlamy okno
+    zgody (formularz <strong>Google User Messaging Platform (UMP)</strong>) -
+    zgodnie z wymogami RODO. Dane z sekcji 5 są wysyłane dopiero po Twojej
+    decyzji. Konfiguracja zaczyna się dopiero po Twojej decyzji. Przy kolejnych uruchomieniach okno pojawia się tylko wtedy, gdy
+    decyzji jeszcze nie podjęto (np. pierwsze uruchomienie bez internetu).
+    W wersji Premium okno nie jest wyświetlane samo. W oknie możesz wyrazić
+    zgodę na reklamy spersonalizowane albo wybrać reklamy niespersonalizowane.
   </p>
   <p>
-    Na urządzeniach Apple (iOS) możemy poprosić o zgodę w ramach <strong>App
-    Tracking Transparency (ATT)</strong>. Bez Twojej zgody nie korzystamy z
-    identyfikatora do śledzenia między aplikacjami. Swoją decyzję możesz zmienić
-    w ustawieniach systemowych urządzenia (prywatność / reklamy) lub resetując
-    identyfikator reklamowy.
+    Na iPhonie, w wersji darmowej, prosimy też o pozwolenie na śledzenie
+    w systemowym oknie <strong>App Tracking Transparency (ATT)</strong> - na
+    potrzeby reklam i pomiaru skuteczności naszych reklam. Od tej decyzji
+    zależą dwie rzeczy: czy reklamy i statystyki mogą korzystać z identyfikatora
+    reklamowego IDFA oraz czy w ogóle uruchamiamy SDK TikToka (sekcja 5b). Bez
+    Twojego pozwolenia nie korzystamy z IDFA, a TikTok nie otrzymuje żadnych
+    danych. Decyzję zmienisz w Ustawienia → Prywatność i ochrona → Śledzenie;
+    wyłączenie śledzenia przy kolejnym otwarciu Aplikacji zatrzymuje SDK
+    TikToka.
   </p>
 
   <h2>5. Statystyki instalacji (Google Analytics dla Firebase)</h2>
@@ -230,9 +237,9 @@
   <p>
     Własne zdarzenia podlegają tym samym zasadom co pozostałe dane z tej
     sekcji: wychodzą dopiero po Twojej decyzji w oknie zgody (poza EOG, Wielką
-    Brytanią i Szwajcarią - bez okna, patrz niżej), w wersji Premium nie są
-    wysyłane (po zakupie najpóźniej od następnego uruchomienia Aplikacji),
-    a w wersjach testowych Aplikacji nie są wysyłane wcale.
+    Brytanią i Szwajcarią - bez okna, patrz niżej), w wersji Premium
+    obowiązują zasady opisane niżej, a w wersjach testowych Aplikacji nie są
+    wysyłane wcale.
   </p>
 
   <h3>Ankieta „Czego zabrakło?"</h3>
@@ -272,10 +279,20 @@
     Premium: <strong>Ustawienia → Zgoda na statystyki</strong>).
   </p>
   <p>
-    W wersji <strong>Premium</strong> nie wysyłamy statystyk korzystania
-    z funkcji. Zdarzenia automatyczne (np. sesje, odnowienia zakupu) są
-    zbierane według decyzji podjętej w oknie zgody przed zakupem, a jeśli jej
-    nie podjęto - nic nie jest wysyłane.
+    Jeśli decyzji nie udało się zebrać (np. brak internetu), Aplikacja
+    przechowuje lokalnie, na urządzeniu, wyłącznie zdarzenia ścieżki zakupu
+    (kroki konfiguracji, wejście na ekran zakupu, rozpoczęcie okresu próbnego
+    lub zakup, bez danych o psie) przez najwyżej 14 dni. Wysyłamy je dopiero
+    po Twojej decyzji - przy odmowie jako zdarzenia bez identyfikatorów. Bez
+    decyzji po 14 dniach są usuwane. Zapis lokalny obejmuje najwyżej 30
+    zdarzeń i nie trafia do kopii w iCloud.
+  </p>
+  <p>
+    W wersji <strong>Premium</strong> wysyłamy wyłącznie zdarzenia ścieżki
+    zakupu, w tym sam zakup, gdy nastąpi po wyrażeniu zgody. Statystyk
+    korzystania z funkcji nie wysyłamy - od chwili zakupu. Zdarzenia
+    automatyczne (np. sesje, odnowienia zakupu) są zbierane według decyzji
+    w oknie zgody, a jeśli jej nie podjęto - nic nie jest wysyłane.
   </p>
   <p>Więcej informacji:</p>
   <ul>
@@ -310,12 +327,12 @@
   </p>
   <p>Więcej informacji: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></p>
 
-  <h2>5b. Pomiar skuteczności reklam na TikToku (TikTok App Events SDK)</h2>
+  <h2>5b. Pomiar skuteczności reklam na TikToku (TikTok Business SDK)</h2>
   <p>
     Prowadzimy kampanie reklamowe Aplikacji na TikToku. Aby mierzyć ich
     skuteczność (np. ile instalacji, okresów próbnych i zakupów przyniosła
-    reklama), w wersji darmowej Aplikacja korzysta z <strong>TikTok App Events
-    SDK</strong>. Odbiorcą danych w Europejskim Obszarze Gospodarczym
+    reklama), Aplikacja korzysta z <strong>TikTok Business SDK</strong>
+    (w oknie zgody: TikTok Ad Network). Odbiorcą danych w Europejskim Obszarze Gospodarczym
     i Szwajcarii jest <strong>TikTok Technology Limited</strong> (10 Earlsfort
     Terrace, Dublin, D02 T380, Irlandia), który zgodnie ze swoją polityką
     prywatności działa wspólnie z TikTok Information Technologies UK Limited.
@@ -324,7 +341,7 @@
   <ul>
     <li>instalacja i uruchomienie Aplikacji,</li>
     <li>zakończenie pierwszej konfiguracji, rozpoczęcie okresu próbnego oraz zakup planu rocznego lub „na zawsze" z kwotą i walutą,</li>
-    <li>identyfikator reklamowy: Apple IDFA - wyłącznie po Twojej zgodzie w oknie ATT, Android Advertising ID - jeśli nie został usunięty w ustawieniach systemu,</li>
+    <li>identyfikator reklamowy: Apple IDFA - wyłącznie po Twojej zgodzie w systemowym oknie śledzenia ATT (wersja darmowa), Android Advertising ID - jeśli nie został usunięty w ustawieniach systemu,</li>
     <li>informacje o urządzeniu (model, wersja systemu, wersja Aplikacji, język) oraz adres IP.</li>
   </ul>
   <p>
@@ -333,15 +350,21 @@
     w Aplikacji.
   </p>
   <p>
-    Obowiązują te same zasady co przy statystykach z sekcji 5: SDK TikToka
-    uruchamia się dopiero po Twojej decyzji w oknie zgody. W Europejskim
-    Obszarze Gospodarczym, Wielkiej Brytanii i Szwajcarii wymaga to Twojej zgody
-    w tym formularzu - TikTok figuruje w nim na liście dostawców jako
-    <strong>TikTok Ad Network</strong>. Bez tej zgody SDK się nie uruchamia.
-    Poza tym obszarem okno zgody się nie pojawia, a SDK uruchamia się bez niego. Do tego czasu TikTok nie
-    otrzymuje żadnych danych, nawet o instalacji. SDK nie działa w wersji
-    Premium ani w wersjach testowych Aplikacji. Zgodę możesz wycofać w
-    <strong>Ustawienia → Zgoda na reklamy</strong>.
+    Na Androidzie SDK uruchamiamy wyłącznie po zgodzie w oknie zgody
+    obejmującej dostawcę TikTok - w wersji darmowej i Premium. Na iPhonie SDK
+    uruchamiamy tylko w wersji darmowej i tylko wtedy, gdy oprócz tej zgody
+    pozwolisz na śledzenie w systemowym oknie Apple (App Tracking
+    Transparency); w wersji Premium na iPhonie TikTok nie jest uruchamiany.
+    Do tej chwili TikTok nie otrzymuje żadnych danych, także o instalacji. Po
+    uruchomieniu SDK otrzymuje fakt instalacji i uruchomienia oraz zdarzenia
+    ścieżki zakupu (ukończenie konfiguracji, rozpoczęcie okresu próbnego,
+    zakup z kwotą i walutą), bez danych o psie; w wersji Premium wyłącznie
+    zdarzenia ścieżki zakupu. Wycofanie zgody w Ustawieniach (albo wyłączenie
+    śledzenia w ustawieniach iPhone'a) zatrzymuje SDK. Poza Europejskim
+    Obszarem Gospodarczym, Wielką Brytanią i Szwajcarią okno zgody nie jest
+    wyświetlane - tam na Androidzie SDK startuje bez niego, a na iPhonie
+    nadal tylko po zgodzie w oknie Apple. SDK nie działa w wersjach testowych
+    Aplikacji.
   </p>
   <p>Więcej informacji:</p>
   <ul>
@@ -364,6 +387,15 @@
     <li>RevenueCat: <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a></li>
   </ul>
   <p>
+    RevenueCat otrzymuje kod miejsca w Aplikacji, z którego dokonano zakupu
+    (np. ekran konfiguracji, ustawienia), bez danych osobowych. Jeśli
+    wyrazisz zgodę na statystyki i pomiar reklam, przekazujemy RevenueCat
+    identyfikator instalacji Google Analytics dla Firebase, aby zdarzenia
+    subskrypcji (odnowienie, zakończenie okresu próbnego) mogły trafić do
+    Google Analytics. Po odmowie lub wycofaniu zgody identyfikator jest
+    usuwany.
+  </p>
+  <p>
     <strong>Atrybucja kampanii Apple Ads (iOS).</strong> Na iPhonie, w wersji
     Aplikacji pobranej z App Store, RevenueCat odbiera od Apple token
     atrybucji (Apple AdServices). Służy on do przypisania instalacji, okresu
@@ -379,11 +411,11 @@
   <ul>
     <li><strong>Google</strong> (AdMob, UMP) - reklamy i zgoda,</li>
     <li><strong>Google</strong> (Google Analytics dla Firebase, Google Ads) - statystyki instalacji i korzystania oraz pomiar skuteczności naszych reklam (wersja darmowa),</li>
-    <li><strong>TikTok Technology Limited</strong> (TikTok App Events SDK) - pomiar skuteczności naszych reklam na TikToku (wersja darmowa, po zgodzie),</li>
+    <li><strong>TikTok Technology Limited</strong> (TikTok Business SDK) - pomiar skuteczności naszych reklam na TikToku (Android: wersja darmowa i Premium, po zgodzie; iPhone: tylko wersja darmowa, po zgodzie i pozwoleniu na śledzenie w oknie Apple),</li>
     <li><strong>Google</strong> (Firebase Crashlytics) - raporty o awariach (wersja darmowa i Premium),</li>
     <li><strong>Apple / Google</strong> - płatności i dystrybucja,</li>
     <li><strong>Apple</strong> (iCloud) - opcjonalna kopia zapasowa na Twoim koncie iCloud (tylko iPhone),</li>
-    <li><strong>RevenueCat</strong> - obsługa uprawnień zakupu oraz atrybucja instalacji i zakupów do kampanii Apple Search Ads (token Apple AdServices, iOS),</li>
+    <li><strong>RevenueCat</strong> - obsługa uprawnień zakupu, kod miejsca zakupu w Aplikacji, po zgodzie przekazanie zdarzeń subskrypcji do Google Analytics dla Firebase oraz atrybucja instalacji i zakupów do kampanii Apple Search Ads (token Apple AdServices, iOS),</li>
     <li><strong>Apple</strong> (AdServices) - przekazanie tokenu atrybucji kampanii Apple Search Ads (iOS).</li>
   </ul>
   <p>Aplikacja nie sprzedaje danych osobowych.</p>
@@ -391,7 +423,7 @@
   <h2>8. Podstawy prawne (RODO)</h2>
   <ul>
     <li><strong>Zgoda</strong> (art. 6 ust. 1 lit. a RODO) - reklamy spersonalizowane i ATT.</li>
-    <li><strong>Zgoda</strong> (art. 6 ust. 1 lit. a RODO w zw. z art. 399 Prawa komunikacji elektronicznej) - statystyki instalacji i korzystania, w tym odpowiedź na ankietę „Czego zabrakło?" (pokazuje się tylko przy wyrażonej zgodzie, a odpowiedź jest dobrowolna), oraz pomiar skuteczności naszych reklam (Google Analytics dla Firebase, TikTok App Events SDK). Zgodę możesz wycofać w dowolnym momencie w Ustawienia → Zgoda na reklamy (w wersji Premium: Ustawienia → Zgoda na statystyki - pozycja jest, gdy decyzję w oknie zgody podjęto w wersji darmowej), bez wpływu na zgodność z prawem przetwarzania sprzed jej wycofania.</li>
+    <li><strong>Zgoda</strong> (art. 6 ust. 1 lit. a RODO w zw. z art. 399 Prawa komunikacji elektronicznej) - statystyki instalacji i korzystania, w tym odpowiedź na ankietę „Czego zabrakło?" (pokazuje się tylko przy wyrażonej zgodzie, a odpowiedź jest dobrowolna), oraz pomiar skuteczności naszych reklam (Google Analytics dla Firebase, TikTok Business SDK). Zgodę możesz wycofać w dowolnym momencie w Ustawienia → Zgoda na reklamy (w wersji Premium: Ustawienia → Zgoda na statystyki - pozycja jest po podjęciu decyzji w oknie zgody), bez wpływu na zgodność z prawem przetwarzania sprzed jej wycofania.</li>
     <li><strong>Wykonanie umowy</strong> (art. 6 ust. 1 lit. b RODO) - realizacja zakupu Premium oraz kopia zapasowa w iCloud (funkcja Aplikacji, z której korzystasz i którą możesz wyłączyć).</li>
     <li><strong>Prawnie uzasadniony interes</strong> (art. 6 ust. 1 lit. f RODO) - bezpieczeństwo, zapobieganie nadużyciom, raporty o awariach (Firebase Crashlytics) i podstawowa (niespersonalizowana) obsługa reklam tam, gdzie jest dozwolona.</li>
   </ul>
@@ -400,13 +432,15 @@
   <p>
     Dane wprowadzone w Aplikacji przechowywane są lokalnie do czasu ich usunięcia
     przez użytkownika lub odinstalowania Aplikacji. Kopia w iCloud (iPhone)
-    zostaje do czasu jej usunięcia w Ustawieniach. Dane zdarzeń powiązane
+    zostaje do czasu jej usunięcia w Ustawieniach. Zdarzenia ścieżki zakupu
+    oczekujące na Twoją decyzję w oknie zgody są przechowywane na urządzeniu
+    najdłużej 14 dni. Dane zdarzeń powiązane
     z identyfikatorami w Google Analytics dla Firebase, w tym odpowiedzi
-    z ankiety, przechowujemy przez <strong>2 miesiące</strong>, po czym są
-    automatycznie usuwane. Dane na poziomie użytkownika (np. identyfikator
-    instalacji i przypisane do niego właściwości) są przechowywane przez
-    <strong>14 miesięcy</strong>, a okres ten liczy się od nowa przy każdej nowej
-    aktywności w Aplikacji. Zbiorcze raporty
+    z ankiety, przechowujemy zgodnie z ustawieniami usługi, <strong>nie dłużej
+    niż 14 miesięcy</strong>, po czym są automatycznie usuwane. Dane na poziomie
+    użytkownika (np. identyfikator instalacji i przypisane do niego
+    właściwości) są przechowywane <strong>nie dłużej niż 14 miesięcy</strong>
+    od ostatniej aktywności w Aplikacji. Zbiorcze raporty
     bez identyfikatorów mogą być przechowywane dłużej. Raporty o awariach
     (Firebase Crashlytics) są przechowywane przez <strong>90 dni</strong>.
     Dane przetwarzane przez
@@ -453,7 +487,7 @@
     ograniczyć sam:
   </p>
   <ul>
-    <li>w Aplikacji: <strong>Ustawienia → Zgoda na reklamy</strong> (w wersji Premium: <strong>Ustawienia → Zgoda na statystyki</strong> - pozycja jest, gdy decyzję w oknie zgody podjęto w wersji darmowej) - w tym samym formularzu Google zmienisz lub wycofasz zgodę,</li>
+    <li>w Aplikacji: <strong>Ustawienia → Zgoda na reklamy</strong> (w wersji Premium: <strong>Ustawienia → Zgoda na statystyki</strong> - pozycja jest po podjęciu decyzji w oknie zgody) - w tym samym formularzu Google zmienisz lub wycofasz zgodę,</li>
     <li>iOS: nie zgadzaj się na śledzenie w oknie ATT albo wyłącz je w Ustawienia → Prywatność i ochrona → Śledzenie - wtedy identyfikator IDFA nie jest udostępniany,</li>
     <li>Android: usuń identyfikator reklamowy w Ustawienia → Google → Reklamy,</li>
     <li>odinstalowanie Aplikacji kończy zbieranie danych, a ponowna instalacja tworzy nowy, niepowiązany identyfikator instalacji.</li>
@@ -466,7 +500,7 @@
 
   <h2>12. Dzieci</h2>
   <p>
-    Aplikacja nie jest skierowana do dzieci poniżej 13. roku życia i nie zbieramy
+    Aplikacja nie jest skierowana do dzieci poniżej 16. roku życia i nie zbieramy
     świadomie ich danych.
   </p>
 
